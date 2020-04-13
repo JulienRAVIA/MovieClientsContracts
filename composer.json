@@ -1,0 +1,29 @@
+{
+    "name": "xylis/movie-clients-contracts",
+    "license": "MIT",
+    "description": "Contracts for Xylis MovieClients libraries",
+    "type": "library",
+    "require": {
+        "php": "^7.2.5",
+        "symfony/http-client": "^5.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.0"
+    },
+    "autoload": {
+      "psr-4": {
+          "Xylis\\MovieClientsContracts\\": "src/"
+      }
+    },
+    "authors": [
+        {
+            "name": "Julien RAVIA",
+            "email": "julien.ravia@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "^7.2.5"
+        }
+    }
+}
