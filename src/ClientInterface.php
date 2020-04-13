@@ -8,9 +8,9 @@ interface ClientInterface
 {
     /**
      * @param string $apiKey
-     * @param HttpClientInterface $client
+     * @param HttpClientInterface $httpClient
      */
-    public function __construct(string $apiKey, HttpClientInterface $client);
+    public function __construct(string $apiKey, HttpClientInterface $httpClient);
 
     /**
      * @param string $method

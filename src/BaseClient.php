@@ -10,15 +10,19 @@ abstract class BaseClient implements ClientInterface
     protected $apiKey;
 
     /** @var HttpClientInterface */
-    protected $client;
+    protected $httpClient;
 
     /** @var string */
     protected $baseUrl;
 
-    public function __construct(string $apiKey, HttpClientInterface $client)
+    /**
+     * @param string $apiKey
+     * @param HttpClientInterface $httpClient
+     */
+    public function __construct(string $apiKey, HttpClientInterface $httpClient)
     {
         $this->apiKey = $apiKey;
-        $this->client = $client;
+        $this->httpClient = $httpClient;
     }
 
     /**
